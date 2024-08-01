@@ -1,0 +1,28 @@
+@media print {
+    body {
+      font-size: 12pt;
+    }
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  #welcome-section {
+    height: 100vh;
+  }
+  
+  #navbar {
+    position: fixed;
+    top: 0;
+  }
+  
