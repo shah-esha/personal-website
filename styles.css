@@ -9,7 +9,7 @@
   --first-color-light: hsl(var(--hue), 55%, 65%);
   --first-color-alt: hsl(var(--hue), 50%, 50%);
   --title-color: hsl(var(--hue), 40%, 16%);
-  --text-color:  hsl(var(--hue), 20%, 80%);
+  --text-color: hsl(30, 30%, 60%);
   --text-color-light: hsl(var(--hue), 20%, 70%);
   --body-color: hsl(var(--hue), 30%, 95%);
   --container-color: hsl(var(--hue), 40%, 20%);
@@ -209,4 +209,54 @@
   /* Open/Close Menu */
   .show-menu {
     right: 0;
+  }
+
+  /*-------------------- HOME --------------------*/
+  .home-container {
+    row-gap: 2rem;
+    padding-top: 1rem;
+  }
+
+  .home-img {
+    width: 220px;
+    justify-self: center;
+    border-radius: 30px;
+    margin-top: -10px;
+    padding-bottom: 10px;
+  }
+
+  .home-name {
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-bold);
+    word-break: break-word;
+    margin-bottom: 1rem;
+  }
+
+  .home-profession {
+    position: relative;
+    font-size: var(--big-font-size);
+    color: var(--text-color);
+  }
+
+  .home-profession::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -.5rem;
+    width: 25%;
+    height: 3px;
+    background-color: var(--text-color);
+  }
+
+  .home-scroll {
+    color: var(--title-color);
+    display: inline-flex;
+    column-gap: .3rem;
+    align-items: center;
+    justify-self: center;
+    margin-top: 3rem;
+  }
+
+  .home-scroll-text {
+    font-weight: var(--font-semi-bold);
   }
