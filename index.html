@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,17 +16,42 @@
     <title>Esha Shah - Portfolio</title>
   </head>
   <body>
-    <div id='navbar'>
-      <a href='#projects'>Projects</a>
-    </div>
-    <section id="welcome-section">
-      <h1>Esha Shah</h1>
-      <section id='projects'>
-        <div class='project-tile'>
-          <a href='https://github.coecis.cornell.edu/es999/a-travel-journal-INFO-1998' />A Travel Journal</a>
+    <!-------------------- HEADER -------------------->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav-logo">Esha</a>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li>
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="#info" class="nav-link">My Info</a>
+            </li>
+            <li>
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li>
+              <a href="#creations" class="nav-link">Other Creations</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav-link">Contact Me</a>
+            </li>
+          </ul>
+
+          <!--Close button-->
+          <div class="nav-close" id="nav-close">
+            <i class="ri-close-large-line"></i>
+          </div>
         </div>
-        <a id='profile-link' href='https://github.coecis.cornell.edu/es999' target='_blank'>My Github Profile</a>
-      </section>
-    </section>
+
+        <!--Toggle button-->
+        <div class="nav-toggle" id="nav-toggle">
+          <i class="ri-menu-5-fill"></i>
+        </div>
+      </nav>
+    </header>
+    <script src="main.js"></script>
   </body>
 </html>
