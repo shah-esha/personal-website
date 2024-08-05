@@ -11,7 +11,7 @@
   --title-color: hsl(var(--hue), 40%, 16%);
   --text-color: hsl(30, 30%, 60%);
   --text-color-light: hsl(var(--hue), 20%, 70%);
-  --body-color: hsl(var(--hue), 30%, 95%);
+  --body-color: hsl(var(--hue), 30%, 91%);
   --container-color: hsl(var(--hue), 40%, 20%);
 
   /*---------- FONT ----------*/
@@ -128,7 +128,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    background-color: transparent;
+    background-color: hsla(var(--hue), 30%, 91%, 0.95);
     z-index: var(--z-fixed);
   }
 
