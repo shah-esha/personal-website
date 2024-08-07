@@ -7,9 +7,10 @@
   --hue: 40;
   --first-color: hsl(var(--hue), 55%, 55%);
   --first-color-light: hsl(var(--hue), 55%, 65%);
+  --first-color-dark: hsl(var(--hue), 55%, 45%);
   --first-color-alt: hsl(var(--hue), 50%, 50%);
   --title-color: hsl(var(--hue), 40%, 16%);
-  --text-color: hsl(30, 30%, 60%);
+  --text-color: hsl(30, 30%, 50%);
   --text-color-light: hsl(var(--hue), 20%, 70%);
   --body-color: hsl(var(--hue), 30%, 91%);
   --container-color: hsl(var(--hue), 40%, 20%);
@@ -22,7 +23,7 @@
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
   --normal-font-size: .938rem;
-  --small-font-size: .813rem;
+  --small-font-size: .85rem;
 
   /*---------- BOLD ----------*/
   --font-regular: 400;
@@ -111,7 +112,7 @@
     padding-block: 5rem 2rem;
   }
 
-  .section_title {
+  .section-title {
     text-align: center;
     font-size: var(--h1-font-size);
     font-weight: var(--font-bold);
@@ -260,3 +261,110 @@
   .home-scroll-text {
     font-weight: var(--font-semi-bold);
   }
+
+  /*-------------------- INFO --------------------*/
+  .par {
+    padding-bottom: 10px;
+  }
+
+  .info-container {
+    row-gap: 3rem;
+  }
+
+  .info-title {
+    position: relative;
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+    margin-bottom: 2rem;
+  }
+
+  .info-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -.5rem;
+    width: 20px;
+    height: 2px;
+    background-color: var(--text-color);
+  }
+
+  /*-- About --*/
+  .about{
+    row-gap: 3rem;
+  }
+
+  .last {
+    margin-bottom: 2rem;
+  }
+
+  .button {
+    display: inline-flex;
+    justify-content: center;
+    background-color: hsl(20, 30%, 78%);
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    padding: 1.25rem 2rem;
+    transition: background-color .4s;
+  }
+
+  .button:hover {
+    background-color: hsl(20, 25%, 68%);
+  }
+
+  .about-button {
+    width: 100%;
+  }
+
+  /*-- Experience --*/
+  .experience-content {
+    row-gap: 2rem;
+  }
+
+  .experience-data {
+    row-gap: 1rem;
+  }
+
+  .experience-company {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-bold);
+  }
+
+  .experience-profession {
+    font-size: var(--h3-font-size);
+    margin-bottom: .25rem;
+  }
+
+  .experience-date {
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: .75rem;
+  }
+
+  /*-- Skills --*/
+  .skills-img {
+    width: 35px;
+    margin-bottom: .5rem;
+  }
+  
+  .skills-name {
+    font-size: var(--small-font-size);
+  }
+
+  .skills-content {
+    grid-template-columns: repeat(3, max-content);
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  .skills-box {
+    display: grid;
+    place-items: center;
+    transition: transform .4s;
+  }
+
+  .skills-box:hover {
+    transform: translateY(-.25rem);
+  }
+
+  /* MAKE IT SO WHEN THEY CLICK THEY ARE TAKEN TO A RELEVANT PROJECT */
+
